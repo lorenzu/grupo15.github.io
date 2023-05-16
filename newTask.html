@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Formulario prueba</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f9f9f9;
+      margin: 0;
+      padding: 20px;
+    }
+    
+    .container {
+      max-width: 600px;
+      margin: 0 auto;
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 8px;
+    }
+    
+    h1 {
+      font-size: 24px;
+      margin-bottom: 20px;
+    }
+    
+    p {
+      margin-bottom: 10px;
+    }
+    
+    input[type="text"],
+    input[type="number"] {
+      width: 100%;
+      padding: 8px;
+      border-radius: 4px;
+      border: 1px solid #ccc;
+    }
+    
+    input[type="radio"] {
+      margin-right: 5px;
+    }
+    
+    .btn {
+      display: inline-block;
+      padding: 8px 16px;
+      background-color: #4caf50;
+      color: #fff;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+    
+    .btn:hover {
+      background-color: #45a049;
+    }
+    
+    .links {
+      text-decoration: none;
+      color: white;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <h1>Formulario de prueba</h1>
+    <p>Inicio > Formulario</p>
+    <button class="btn" title="Volver a la página principal"> 
+      <a class="links" href="./main.html">Volver</a>
+    </button>
+    <!-- Suponiendo que tenemos un servidor, empleamos datosEnviados.php para el envío de formulario, sin embargo al no hacer uso de él, redireccionamos a una imagen. -->
+    <form action="formularioCorrecto.html" method="get">
+      <p>Nombre: <input type="text" name="nombre" placeholder="Juan Perez" required alt="Campo Nombre" title="Ingrese su nombre completo"></p>
+      <p>Año de nacimiento: <input type="number" name="nacido" min="1900" required alt="Campo Año de nacimiento" title="Ingrese su año de nacimiento"></p>
+      <p>Sitio que visitar: <input type="text" name="sitio" placeholder="Los Hervideros" required alt="Campo Sitio que visitar" title="Ingrese el sitio que desea visitar"></p>
+      <p>Forma de pago:
+        <input type="radio" name="formadepago" value="efectivo" required alt="Campo Forma de pago" title="Seleccione la forma de pago: Efectivo"> Efectivo
+        <input type="radio" name="formadepago" value="tarjeta" required alt="Campo Forma de pago" title="Seleccione la forma de pago: Tarjeta"> Tarjeta
+      </p>
+      <p>
+        <input class="btn" type="submit" value="Enviar" title="Enviar el formulario">
+        <input class="btn" type="reset" value="Borrar" title="Borrar los campos del formulario">
+      </p>
+    </form>
+    
+    
+    
+  </div>
+</body>
+</html>
