@@ -23,18 +23,6 @@
   width: 200px;
   margin: auto;
 }
-
-/* Boton de volver */
-.back-button {
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: #f9f9f9;
-    border-radius: 4px;
-    text-decoration: none;
-    color: #000;
-    font-weight: bold;
-    margin-top: 10px;
-  }
   
 #cabecera {
   background-image: url('cabecera.jpg');
